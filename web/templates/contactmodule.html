@@ -1,0 +1,17 @@
+<div>
+<br>
+<div class="input-group col-md-6 col-md-offset-3">
+        <span class="input-group-addon" id="sizing-addon2">@</span>
+        <input type="text" class="form-control"  ng-model="user.email" placeholder="Email" aria-describedby="sizing-addon2">
+    </div>
+<br>
+    <div class="input-group col-md-6 col-md-offset-3">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        <textarea  ng-model="user.mailBody" class="form-control" name="comment" placeholder="Type here your message"></textarea>
+    </div>
+<br>
+    <button  type="submit" ng-click="sendMail()" class="btn btn-warning col-md-offset-6 col-md-3" >
+        Send
+        <span class="glyphicon glyphicon-send"></span>
+    </button>
+</div>

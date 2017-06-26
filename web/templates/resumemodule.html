@@ -1,0 +1,23 @@
+<div class="col-md-10 col-md-offset-1">
+    <ng-pintura ngp-src="image.src"
+                ngp-scaling="image.scaling"
+                ngp-position="image.position"
+                ngp-max-scaling="image.maxScaling"
+                ngp-scale-step="image.scaleStep"
+                ngp-move-step="image.moveStep"
+                ngp-mw-scale-step="image.mwScaleStep"
+                ngp-fit-onload="image.fitOnload"
+                ngp-show-indicator="image.showIndicator"
+                ngp-progress="image.progress">
+
+        <button id="downloadCv"
+                data-toggle="tooltip" data-placement="bottom" title="Download complete resume"
+                onClick="location.href='https://drive.google.com/uc?export=download&id=0B8xAlvLgHU69cjlsb09FaVEtREU'"
+                class="btn btn-warning"><span class="glyphicon glyphicon-download"></span></button>
+        <button id="moveup" ng-click="moveUp()" class="btn btn-default"><span class="glyphicon glyphicon-chevron-up"></span></button>
+        <button id="movedown" ng-click="moveDown()" class="btn btn-default"><span class="glyphicon glyphicon-chevron-down"></span></button>
+        <button id="zoomin" ng-click="zoomIn()" ng-disabled="scalingDisabled" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+        <button id="zoomout" ng-click="zoomOut()" ng-disabled="scalingDisabled" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button>
+        <button id="movecenter" ng-click="fitInView()" class="btn btn-default"><span class="glyphicon glyphicon-screenshot"></span></button>
+    </ng-pintura>
+</div>
